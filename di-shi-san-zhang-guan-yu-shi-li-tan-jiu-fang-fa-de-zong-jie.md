@@ -22,9 +22,13 @@
 
 模型中可解释变量的个数是选择可解释方法的一个重要的标准。
 
-### 13.2.1 Low to medium number of explanatory variables
+### 13.2.1 Low to medium number of explanatory variables（较少数目的解释性变量）
 
 一个具有较少变量的模型通常表示模型中特定的变量具有很好的解释性。一个具体的实例是在4.2.1节和4.2.3 节关于Titanic数据集所建立的模型的各个变量。
 
 在这个例子中，CP profiles揭示了每个变量对模型的预测结果影响的详细信息。特别的，那些对模型的预测结果具有很大影响的变量能够通过用CP-Profile Oscillations（第11章）方法所筛选，然后通过用Individual-variable CP-profiles （第10章）进行图形化的展示。
+
+### 13.2.2 Medium to a large number of explanatory variables\(较多数目的解释型变量\)
+
+在具有较多数量可解释型变量的模型中，大部分（全部）的变量仍然具有可解释性。一个相关的例子是car-insurance 价格模型，在这个模型中，我们通过100+个包括司机和车的特征的行为数据来对保险的价格进行预测。
 
