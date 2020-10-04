@@ -73,7 +73,7 @@
 
 另一个我们想比较模型的原因是，建模过程本身是一个迭代的过程（章节2.2）。在这个过程中，有很多不同的模型将会被构建，它们经常具有不同的结构，但是有时会有很相似的表现。比较分析能够更好的为我们提供两个模型是如何不同的。
 
-如下我们提供了一个关于Logistic regression的对比分析的例子titanic\_lmr（如章节4.2.1），random forest模型titanic\_rf（如章节4.2.2）
+如下我们提供了一个关于Logistic regression的对比分析的例子titanic\_lmr（如章节4.2.1），random forest模型titanic\_rf（如章节4.2.2）,boosting 模型 titanic\_gbm（如章节4.2.3）以及Support-Vector Machine（svm）模型 titanic\_svm（如章节4.2.4）。我们将Jhnnoj
 
 ## 
 
