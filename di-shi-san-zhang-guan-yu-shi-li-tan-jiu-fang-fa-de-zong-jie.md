@@ -87,5 +87,11 @@
 
 ![&#x56FE;13.3 &#x5BF9;&#x4E8E;Titanic&#x6570;&#x636E;&#x548C;&#x4E58;&#x5BA2;Johnny\_D&#x7684;4&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x9884;&#x6D4B;&#x6A21;&#x578B;&#x7684;&#x4EA4;&#x4E92;&#x6027;&#x7684;BD Plots](.gitbook/assets/13-3.jpg)
 
+图13.4 展示了4种不同模型下的age 和 fare 的CP Profiles。对于fare变量，Logistic regression 模型和SVM模型没有表现出较大的影响。同样的结论也适用于Boosting 模型，尽管该模型下的profile表现出明显的变化。Random Forest的profile揭示了预测生还概率的下降趋势，当ticket fare 增长大约超过37磅时。
 
+对于age，SVM模型的CP Profile再次展示出了很明显的震荡。然而，对于所有的模型，age变量的影响是很显著的，其生还概率的预测值随着age的增长而降低。这种效果在Logistic regression模型中的表现更为显著。
+
+![&#x56FE;13.4 &#x5BF9;&#x4E8E;Titanic &#x6570;&#x636E;&#x96C6;&#x548C;&#x4E58;&#x5BA2;Johnny\_D&#x7684;4&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x6A21;&#x578B;&#x4E0B;age &#x548C;fare &#x7684;CP Profiles&#x5BF9;&#x6BD4;](.gitbook/assets/13-4.jpg)
+
+Leo Breiman\(2001b\)描述了一种叫“Rashormon effect（罗生门）”的现象。这种现象所要说明的是：那些不同的模型所产生的相同的预测表现性能，可能是根据相同的数据集中所提取出的完全不同的关联而产生的。
 
