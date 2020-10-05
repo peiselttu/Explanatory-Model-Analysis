@@ -77,7 +77,7 @@
 
 值得注意的是模型并不是完全不同。Random Forest模型和Boosting 模型是基于树状结构的模型，它们具有一个越界响应（预测）曲线。它们的复杂度是由于所涉及较大数目的树，当进行预测时。Logistic regression和SVM模型会产生连续，平滑的响应曲线。它们的复杂性来源于logistic regression模型包含样条变换，而SVM 模型是利用非线性的核函数。这些方法的不同导致了在预测Johnny\_D生还概率的不同结果。特别的，对于Random Forest，Logistic Regression，Gradient Boosting和SVM 模型的响应的预测生还概率为：0.42，0.77，0.66，和0.22（如章节4.2.5）。
 
-
+图13.2展示了四种不同的模型对于预测Johnny\_D生还概率的Shapley Values（如第8章）。对于Random Forest 和Logistic Regression模型，相似的变量被检测出对预测结果具有重要影响：age，class，和gender。Class 和gender 在Gradient Boosting 模型中也发挥着重要的作用，然而对于SVM模型，最具有影响的变量为gender，然后是age和parch。
 
 ## 
 
