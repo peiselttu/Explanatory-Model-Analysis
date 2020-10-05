@@ -4,9 +4,9 @@
 
 在本书的第II部分中，我们主要介绍了一系列的解释性方法，并试图通过这些方法来探究，解释模型在实例层面上的预测情况。其中，每一个章节主要介绍一种方法。然而在实践中，它们被单独使用的情况很少，通常是将这些不同的方法模型所产生的分析结果整合起来，从而提供对问题更加全局的认知。
 
-图13.1是对这些方法的图形化的展示。这些图形展示了对基于Titanic数据（章节4.1）所构建的随机森林模型（章节4.2.2）的4种不同的实例级别的解释方法。我们所研究的实例是Johnny\_D，一个在Southampton登船的8岁男孩。他是头等舱乘客，没有父母和兄弟姐妹陪同，票价是72英镑（章节4.2.5）。我们的目的是预测Johnny\_D的生还的概率。
+图13.1是对这些方法的图形化的展示。这些图形展示了对基于Titanic数据（章节4.1）所构建的Random Foreset模型（章节4.2.2）的4种不同的实例层面的解释方法。这里，我们所研究的具体实例是Johnny\_D，一个在Southampton登船的8岁男孩，头等舱乘客，没有父母和兄弟姐妹陪同，票价是72英镑（章节4.2.5）。我们的目的是基于这些特征，预测Johnny\_D的生还概率。
 
-在图13.1中，第一行展示了有关变量-贡献（Variable-attribution）和变量-重要性（Variable-importance）方法的很多应用。这些方法包括Break-Down\(BD\) 图像（第6章），Shapley Values（第8章），和 Local Interpretable Model-agnostic Explanations\(LIME\)（第9章\)。所有的结果一致表明那些最重要的解释性变量，从对Johnny\_D的生还可能性的预测概率来看，是age，gender，class，和fare。值得注意的是，那些由additive decompositions 产生的图像有可能不会完全正确，因为fare和class变量有可能会相互关联，age和gender变量之间可能会由交互。
+图13.1的第一行展示了基于变量-贡献（Variable-attribution）和变量-重要性（Variable-importance）方法的各类应用。这些方法具体包括Break-Down\(BD\) Plots（第6章），Shapley Values（第8章），和 Local Interpretable Model-agnostic Explanations\(LIME\)（第9章\)。所有的结果一致表明那些最重要的解释性变量，从对Johnny\_D的生还可能性的预测概率方面来看，是age，gender，class，和fare。但是值得注意的是，那些由加性分解产生的图像有可能不完全正确，因为fare和class变量是相互关联的，age和gender变量之间可能会有交互性。
 
 在图13.1中，第二行展示了影响Johnny\_D生还概率的4个最重要的可解释性变量的Ceteris-Paribus\(CP\) profiles\(第10章\)。这些Profiles表明，增加年龄或将旅行舱位改为二等舱或者为”餐馆员工“会降低对生还可能性的预测概率。另一方面，降低票价，将性别改变为女，或者将旅行舱改为”deck crew“会增加生还的概率。
 
