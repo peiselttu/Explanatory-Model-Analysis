@@ -81,7 +81,11 @@
 
 ![Figure 13.2.  &#x5BF9;&#x4E8E;Titanic&#x6570;&#x636E;&#x96C6;&#x548C;Johnny\_D&#x4E58;&#x5BA2;&#x7684;4&#x4E2A;&#x4E0D;&#x540C;&#x9884;&#x6D4B;&#x6A21;&#x578B;&#x7684;Shapley &#x503C;](.gitbook/assets/13-2.jpg)
 
-就像在第8章中所讨论的那样，Shapley值是表示可解释变量对模型预测值的加性贡献。然而，这些值可能会有误导性，如果考虑到交互性的存在。在这种情况下，在第7章种所讨论的iBD Plots可能会更加有用。
+就像在第8章中所讨论的那样，Shapley值是表示可解释变量对模型预测值的加性贡献。然而，这些值可能会有误导性，如果考虑到交互性的存在。在这种情况下，在第7章种所讨论的iBD Plots可能会更加有用。图13.3展示了在该情况下的4种不同的模型。
+
+对于SVM 模型，最重要的变量是gender，然而对于其他的模型，最重要的变量则是age和class。值得注意的是random Forest的iBD Plot包含了fare和class的交互。
+
+![&#x56FE;13.3 &#x5BF9;&#x4E8E;Titanic&#x6570;&#x636E;&#x548C;&#x4E58;&#x5BA2;Johnny\_D&#x7684;4&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x9884;&#x6D4B;&#x6A21;&#x578B;&#x7684;&#x4EA4;&#x4E92;&#x6027;&#x7684;BD Plots](.gitbook/assets/13-3.jpg)
 
 
 
