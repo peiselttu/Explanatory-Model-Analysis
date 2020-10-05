@@ -75,6 +75,8 @@
 
 如下我们提供了一个关于Logistic regression的对比分析的例子titanic\_lmr（如章节4.2.1），random forest模型titanic\_rf（如章节4.2.2）,boosting 模型 titanic\_gbm（如章节4.2.3）以及Support-Vector Machine（svm）模型 titanic\_svm（如章节4.2.4）。我们将Johnny\_D（如章节4.2.5）作为一个感兴趣的实例。
 
+值得注意的是模型并不是完全不同。Random Forest模型和Boosting 模型是基于树状结构的模型，它们具有一个越界响应（预测）曲线。它们的复杂度是由于所涉及较大数目的树，当进行预测时。Logistic regression和SVM模型会产生连续，平滑的响应曲线。它们的复杂性来源于logistic regression模型包含样条变换，而SVM 模型是利用非线性的核函数。这些方法的不同导致了在预测Johnny\_D生还概率的不同结果。特别的，对于Random Forest，Logistic Regression，Gradient Boosting和SVM 模型的响应的预测生还概率为：0.42，0.77，0.66，和0.22。
+
 
 
 ## 
