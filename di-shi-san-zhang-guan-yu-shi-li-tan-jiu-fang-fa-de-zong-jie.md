@@ -79,7 +79,9 @@
 
 图13.2展示了四种不同的模型对于预测Johnny\_D生还概率的Shapley Values（如第8章）。对于Random Forest 和Logistic Regression模型，相似的变量被检测出对预测结果具有重要影响：age，class，和gender。Class 和gender 在Gradient Boosting 模型中也发挥着重要的作用，然而对于SVM模型，最具有影响的变量为gender，然后是age和parch。
 
-## 
+![Figure 13.2.  &#x5BF9;&#x4E8E;Titanic&#x6570;&#x636E;&#x96C6;&#x548C;Johnny\_D&#x4E58;&#x5BA2;&#x7684;4&#x4E2A;&#x4E0D;&#x540C;&#x9884;&#x6D4B;&#x6A21;&#x578B;&#x7684;Shapley &#x503C;](.gitbook/assets/13-2.jpg)
+
+就像在第8章中所讨论的那样，Shapley值是表示可解释变量对模型预测值的加性贡献。
 
 
 
