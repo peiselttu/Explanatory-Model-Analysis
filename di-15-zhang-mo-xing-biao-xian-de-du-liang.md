@@ -8,6 +8,14 @@
 
 这些模型的评估方法可以用在以下几个方面：
 
+* Model Evaluation: 如果我们想知道模型的表现，例如，模型的预测值的可靠性（我们所期望的error的频率和大小是多少？）？
+* Model Comparison: 我们可能会想要对比两个模型的性能，基于此来选择其中一个；
+* Out-of-sample and out-of-time comparisons: 我们想评估当模型被用于新的数据上的时候的表现是否会变差；
+
+根据dependent variable的类型（e.g., continuous, binary, categorical, count, etc），我们可以使用不同的性能的评估方法。而且，当新的应用产生时，评估方法也在不同的也在增加。在本章中，我们仅讨论特定的一些评估方法，其中的一些方法将会在接下来的几章中陆续介绍。同时，针对dependent variables我们也只考虑连续性（包括count）和类别型（包括binary）的两种情况。
+
+
+
 
 
 
