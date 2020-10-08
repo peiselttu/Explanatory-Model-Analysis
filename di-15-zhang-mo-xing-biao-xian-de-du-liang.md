@@ -14,6 +14,14 @@
 
 根据dependent variable的类型（e.g., continuous, binary, categorical, count, etc），我们可以使用不同的性能的评估方法。而且，当新的应用产生时，评估方法也在不同的也在增加。在本章中，我们仅讨论特定的一些评估方法，其中的一些方法将会在接下来的几章中陆续介绍。同时，针对dependent variables我们也只考虑连续性（包括count）和类别型（包括binary）的两种情况。
 
+## 15.2 Intuition
+
+大多数模型性能的评估，是基于模型对dependent variable 的预测值与数据集中（已知）的实际值不同的。在理想的情况是，模型对样本的预测值和实际值应该是相等的。而在实际情况中，这两者之间通常是由差异的，我们通常要量化他们之间的不同。
+
+大体上，我们可以在training dataset上计算模型的性能。
+
+
+
 
 
 
