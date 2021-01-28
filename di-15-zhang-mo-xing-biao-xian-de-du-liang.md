@@ -32,6 +32,8 @@
 
 训练集是用来构建模型  $$f(\underline{\hat{\theta}};\underline{X})$$ ，其中 $$\underline{\hat{\theta}}$$ 是对模型回归系数的估计，而且在这里，我们也可以使用“惩罚”估计参数 $$\underline{\tilde{\theta}}$$ \(详见，章节2.5\)。同时， $$\hat{y}_i$$ 为模型针对 $$y_i$$的估计值。 
 
+对模型性能的分析通常是基于一个独立的数据及，这个数据集叫测试集。在有的情况下，采用Leave-One-Out方法对模型性能进行度量。此时，我们用 $$\underline{X}_{-i}$$ 表示在原数据集中除去第 $$i$$个样本后，剩余样本的解释变量所组成的矩阵， $$f(\underline{\hat{\theta}}_{-i};\underline{\hat{X}}_{-i})$$表示在除去第 $$i$$ 个样本后的剩余样本上所构建的模型。值得注意的是基于 $$Leave-One-Out$$ 方法所构建的模型 $$f(\underline{\hat{\theta}}_{-i};\underline{\hat{X}}_{-i})$$ 与基于所有样本所构建的模型 $$f(\underline{\hat{\theta}};\underline{X})$$ 是不同的。但是在大多数的情况下，它们所得到的结果是相接近的，而且在一个模型上所得出的结论通常能够转换到另一个模型上。此外，我们用 $$\hat{y_i}_{-i}$$ 表示基于模型 $$f(\underline{\hat{\theta}}_{-i};\underline{\hat{X}}_{-i})$$ 对 $$y_i$$ 的预测值。
+
 
 
 
